@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>رزومه دکتر حسین یزدی زاده</title>
+<meta name="description" content="رزومه دکتر حسین یزدی زاده، فیزیولوژیست عصبی-عضلانی ورزشی و مربی بین‌المللی">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #13233a;
+    --paper: #f7f5f0;
+    --sand: #e8dfcc;
+    --water: #1d6a9e;
+    --muted: #5d6b7c;
+    --rule: #d6d0c2;
+    color-scheme: light;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    font-family: "Vazirmatn", Tahoma, sans-serif;
+    font-size: 17px;
+    line-height: 1.9;
+    color: var(--ink);
+    background: var(--paper);
+  }
+
+  a { color: var(--water); }
+  :focus-visible { outline: 3px solid var(--water); outline-offset: 3px; }
+
+  .wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  @media (min-width: 900px) {
+    .wrap { grid-template-columns: 200px 1fr; }
+    nav.index { position: sticky; top: 40px; align-self: start; padding-top: 72px; }
+  }
+
+  /* Hero */
+  header.hero {
+    padding: 72px 0 40px;
+    border-bottom: 1px solid var(--rule);
+    grid-column: 1 / -1;
+  }
+  .hero-top {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .photo {
+    width: 180px;
+    height: 220px;
+    border-radius: 6px;
+    object-fit: cover;
+    background: var(--sand);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    font-size: 14px;
+    text-align: center;
+    padding: 12px;
+  }
+  .hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-weight: 800;
+    line-height: 1.25;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .hero .title {
+    margin: 0 0 20px;
+    color: var(--muted);
+    font-size: 1.05rem;
+    font-weight: 400;
+  }
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .contact a { text-decoration: none; direction: ltr; unicode-bidi: plaintext; }
+  .contact a:hover { text-decoration: underline; }
+
+  .stats {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .stats li {
+    padding: 22px 8px;
+    border-inline-end: 1px solid var(--rule);
+  }
+  .stats li:last-child { border-inline-end: none; }
+  .stats strong {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--water);
+    line-height: 1.1;
+  }
+  .stats span { font-size: 14px; color: var(--muted); }
+  @media (min-width: 700px) {
+    .stats { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  /* Index */
+  nav.index ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+  }
+  nav.index li { margin-bottom: 10px; }
+  nav.index a { color: var(--muted); text-decoration: none; }
+  nav.index a:hover { color: var(--ink); }
+
+  main { min-width: 0; }
+
+  section {
+    padding: 40px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  section:last-child { border-bottom: none; }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0 0 24px;
+  }
+  h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 28px 0 10px;
+    color: var(--water);
+  }
+
+  p { margin: 0 0 16px; max-width: 70ch; }
+
+  ul.plain {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.plain li {
+    padding: 10px 0 10px 0;
+    border-bottom: 1px dotted var(--rule);
+  }
+  ul.plain li:last-child { border-bottom: none; }
+
+  /* Timeline-like rows for dated items */
+  .rows { width: 100%; border-collapse: collapse; font-size: 15px; }
+  .rows th, .rows td {
+    text-align: right;
+    padding: 12px 8px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  .rows th { font-weight: 600; color: var(--muted); font-size: 14px; border-bottom: 1px solid var(--ink); }
+  .rows td.year { white-space: nowrap; color: var(--muted); direction: ltr; }
+
+  .split {
+    display: grid;
+    gap: 32px;
+  }
+  @media (min-width: 700px) {
+    .split { grid-template-columns: 1fr 1fr; }
+  }
+
+  .highlight {
+    background: var(--sand);
+    padding: 20px 24px;
+    border-radius: 4px;
+    margin: 8px 0 24px;
+  }
+
+  footer {
+    grid-column: 1 / -1;
+    padding: 32px 0 56px;
+    font-size: 14px;
+    color: var(--muted);
+    border-top: 1px solid var(--rule);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="hero-top">
+      <img class="photo" src="photo.jpg" alt="حسین یزدی زاده"
+           onerror="this.outerHTML='<div class=&quot;photo&quot;>عکس پرسنلی را با نام photo.jpg کنار این فایل قرار دهید</div>'">
+      <div>
+        <h1>دکتر حسین یزدی زاده</h1>
+        <p class="title">فیزیولوژیست عصبی-عضلانی ورزشی · مربی بین‌المللی · مدیر ورزشی</p>
+        <ul class="contact">
+          <li><a href="tel:+989133206038">۰۹۱۳۳۲۰۶۰۳۸</a></li>
+          <li><a href="mailto:h.yazdizadeh@iau.ac.ir">h.yazdizadeh@iau.ac.ir</a></li>
+          <li><a href="mailto:Hossein.yazdizadeh93@gmail.com">Hossein.yazdizadeh93@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <ul class="stats" aria-label="خلاصه آمار">
+    <li><strong>+۱۰</strong><span>سال پژوهش و تدریس</span></li>
+    <li><strong>+۲۷</strong><span>دوره قهرمانی کشوری</span></li>
+    <li><strong>+۷۰</strong><span>مدال کشوری</span></li>
+    <li><strong>+۱۵</strong><span>سمت اجرایی و فدراسیونی</span></li>
+  </ul>
+
+  <nav class="index" aria-label="فهرست">
+    <ol>
+      <li><a href="#intro">معرفی حرفه‌ای</a></li>
+      <li><a href="#admin">سوابق اجرایی و مدیریتی</a></li>
+      <li><a href="#coaching">مربیگری و افتخارات</a></li>
+      <li><a href="#teaching">علمی و تدریس</a></li>
+      <li><a href="#certs">مدارک و گواهینامه‌ها</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <section id="intro">
+      <h2>معرفی حرفه‌ای</h2>
+      <p>
+        دکتر حسین یزدی زاده، فیزیولوژیست عصبی-عضلانی ورزشی، مربی بین‌المللی و مدیر ورزشی با بیش از یک دهه
+        تجربه ترکیبی در پژوهش، تدریس دانشگاهی، مربیگری قهرمانی و مدیریت کلینیک‌های تخصصی است.
+      </p>
+      <p>فعالیت حرفه‌ای ایشان بر سه محور استوار است:</p>
+      <ul class="plain">
+        <li>۱. بهینه‌سازی عملکرد ورزشکاران نخبه کشور</li>
+        <li>۲. پیشگیری از آسیب و بازتوانی ورزشکاران</li>
+        <li>۳. استعدادیابی و نخبه‌پروری در ورزش</li>
+      </ul>
+      <div class="highlight">
+        ایشان سابقه هدایت تیم‌های قهرمانی کشوری در بیش از یک دهه را در کارنامه دارند و هم‌زمان در سمت‌های
+        علمی و مدیریتی فدراسیون‌ها و هیات‌های استانی خدمت کرده‌اند.
+      </div>
+    </section>
+
+    <section id="admin">
+      <h2>سوابق اجرایی و مدیریتی</h2>
+      <h3>سمت‌های فعلی</h3>
+      <ul class="plain">
+        <li>مدیرعامل و مؤسس آکادمی تخصصی بدنسازی هایکا</li>
+        <li>مدیرعامل کلینیک حرکت اصلاحی و مشاوره ورزشی ارشان</li>
+        <li>رئیس پژوهشکده تخصصی باشگاه فرهنگی ورزشی سیمان اصفهان</li>
+        <li>رئیس پژوهشگاه ورزش‌های آبی استان اصفهان</li>
+        <li>رئیس آزمایشگاه تخصصی ورزش‌های آبی استان اصفهان</li>
+        <li>عضو کارگروه هوش مصنوعی فدراسیون شنا</li>
+        <li>عضو انجمن آکوافیتنس اروپا (EAA)</li>
+      </ul>
+      <h3>مسئولیت‌های فدراسیونی و استانی</h3>
+      <ul class="plain">
+        <li>مسئول کمیته استعدادیابی و نخبه‌پروری هیات ورزش‌های رزمی استان اصفهان</li>
+        <li>رئیس کمیته ورزش در آب هیات کارگری استان اصفهان</li>
+        <li>مسئول کمیته رویینگ داخل سالن هیات رویینگ استان اصفهان</li>
+        <li>رئیس هیات شنای شهرستان فلاورجان</li>
+        <li>رئیس کمیته پژوهش هیات شنای استان اصفهان</li>
+        <li>رئیس کمیته آب‌درمانی هیات نجات غریق استان اصفهان</li>
+        <li>عضو کمیته آب‌درمانی فدراسیون نجات غریق کشور</li>
+      </ul>
+      <h3>سمت‌های پیشین</h3>
+      <ul class="plain">
+        <li>مدیر استخر گل‌ها (۱۳۸۹)</li>
+        <li>مدیر بخش پیشگیری از آسیب، تمرین پیش از عمل جراحی و RTS در کلینیک‌های فیزیوتراپی</li>
+        <li>مسئول فیزیولوژی مؤسسه سپانو (۱۳۹۳ تا ۱۳۹۵)</li>
+      </ul>
+    </section>
+
+    <section id="coaching">
+      <h2>سوابق مربیگری و افتخارات ورزشی</h2>
+      <h3>مربیگری در سطح ملی و حرفه‌ای</h3>
+      <ul class="plain">
+        <li>مربی بدنساز شناگران نخبه کشور (ملی و باشگاهی)</li>
+        <li>مربی بدنساز شماری از تنیسورهای تیم ملی، از جمله رنکینگ ۳ آسیا و برترین‌های رده‌های سنی</li>
+        <li>مربی بدنساز ملی‌پوشان پدل ایران، با مدال طلای آسیا و افتخارات دیگر</li>
+        <li>مربی شنای مدعو طرح نخبگان شنای کشور</li>
+      </ul>
+
+      <h3>افتخارات قهرمانی</h3>
+      <table class="rows">
+        <thead>
+          <tr><th>تیم / سازمان</th><th>دوره</th><th>افتخار</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>دانشگاه پیام نور اصفهان</td><td class="year">۱۳۹۲ تاکنون</td><td>۶ دوره قهرمانی کشور</td></tr>
+          <tr><td>دانشگاه علوم پزشکی اصفهان (المپیاد)</td><td class="year">۱۳۹۳ تاکنون</td><td>۴ دوره قهرمانی کشور</td></tr>
+          <tr><td>دانشگاه آزاد اصفهان</td><td class="year">۱۳۹۳ تا ۱۳۹۶</td><td>۳ دوره قهرمانی</td></tr>
+          <tr><td>کارکنان دانشگاه آزاد خوراسگان</td><td class="year">۱۳۹۷ تاکنون</td><td>۱ دوره قهرمانی</td></tr>
+          <tr><td>شرکت گاز استان اصفهان</td><td class="year">۱۳۹۳ تا ۱۳۹۷</td><td>یک کاپ قهرمانی کشور و ۷۰ مدال کشوری</td></tr>
+          <tr><td>تیم دانش‌آموزی سما</td><td class="year">۱۳۹۴</td><td>۱ دوره قهرمانی کشور</td></tr>
+          <tr><td>بزرگسالان استان اصفهان</td><td class="year">۱۴۰۳</td><td>مقام سوم کشور و قهرمانی استان</td></tr>
+          <tr><td>رده‌های سنی پایه استان اصفهان</td><td class="year">۱۳۹۰ تا ۱۳۹۱</td><td>مقام دوم و سوم کشور</td></tr>
+          <tr><td>تیم شنای کارکنان فولاد مبارکه سپاهان</td><td class="year">۱۳۹۷</td><td>راهیابی به مسابقات جهانی کمپانی‌ها</td></tr>
+        </tbody>
+      </table>
+
+      <h3>سایر تجربیات مربیگری</h3>
+      <ul class="plain">
+        <li>مربی تیم‌های رده سنی منطقه آزاد کیش (۱۳۹۲)</li>
+        <li>مشاور و مربی ورزش در آب کارخانه نامی‌نو اصفهان (۱۳۹۵ تا ۱۳۹۶)</li>
+      </ul>
+    </section>
+
+    <section id="teaching">
+      <h2>سوابق علمی و تدریس</h2>
+      <div class="split">
+        <div>
+          <h3>تدریس فدراسیونی و دولتی</h3>
+          <ul class="plain">
+            <li>مدرس رسمی فدراسیون نجات غریق جمهوری اسلامی ایران (آب‌درمانی و نجات غریق)</li>
+            <li>مدرس رسمی وزارت ورزش و جوانان</li>
+            <li>مدرس فدراسیون ورزش‌های آبی (فیزیولوژی، طراحی تمرین و استعدادیابی)</li>
+            <li>مدرس سمینارهای استانی و کشوری در علوم ورزشی</li>
+          </ul>
+        </div>
+        <div>
+          <h3>تدریس دانشگاهی</h3>
+          <table class="rows">
+            <thead><tr><th>دانشگاه</th><th>دوره</th></tr></thead>
+            <tbody>
+              <tr><td>دانشگاه علوم پزشکی استان اصفهان</td><td class="year">—</td></tr>
+              <tr><td>دانشگاه آزاد اسلامی واحد اصفهان (خوراسگان)</td><td class="year">—</td></tr>
+              <tr><td>دانشگاه صنعتی فولاد</td><td class="year">۱۳۹۵ تا ۱۳۹۷</td></tr>
+              <tr><td>دانشگاه سما</td><td class="year">۱۳۹۳ تا ۱۳۹۷</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <h3>آثار علمی</h3>
+      <ul class="plain">
+        <li>ویراستار علمی کتاب «موبیلیتی عملکردی در شناگران» (۱۴۰۵)</li>
+        <li>چاپ مقالات متعدد در زمینه فیزیولوژی، MS و آلودگی هوا</li>
+      </ul>
+    </section>
+
+    <section id="certs">
+      <h2>مدارک و گواهینامه‌های تخصصی</h2>
+      <div class="split">
+        <div>
+          <h3>مدارک مربیگری</h3>
+          <ul class="plain">
+            <li>مربی بین‌المللی ورزش در آب (آکوافیتنس)</li>
+            <li>مربی درجه ۱ فدراسیون شنای جمهوری اسلامی ایران</li>
+            <li>مربی فدراسیون هندبال جمهوری اسلامی ایران</li>
+            <li>مربی فدراسیون سه‌گانه ایران</li>
+          </ul>
+        </div>
+        <div>
+          <h3>مدارک داوری</h3>
+          <ul class="plain">
+            <li>داور ملی فدراسیون شنای جمهوری اسلامی ایران</li>
+            <li>داور ملی فدراسیون سه‌گانه جمهوری اسلامی ایران</li>
+            <li>داور رسمی فدراسیون هندبال جمهوری اسلامی ایران</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>سابقه ورزش قهرمانی</h3>
+      <ul class="plain">
+        <li>عضو سابق تیم شنای استان اصفهان</li>
+        <li>عضو سابق تیم شنای مخابرات استان اصفهان</li>
+        <li>عضو سابق تیم شنای دانشجویی اصفهان</li>
+        <li>عضو سابق تیم منتخب هندبال دانشجویان کشور</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    آخرین به‌روزرسانی این رزومه: ۱۴۰۵
+  </footer>
+
+</div>
+</body>
+</html>
